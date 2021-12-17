@@ -57,6 +57,10 @@
                     <span style="font-size:30px;">Mật khẩu: </span>
                         <input type="password" placeholder="Mật khẩu">
                     </div>
+                    <div class="col-lg-11 col-md-11">
+                    <span style="font-size:30px;">Mật khẩu: </span>
+                        <input type="password" placeholder="Mật khẩu">
+                    </div>
                     <div class="col-lg-11 text-right">
                    <p><a href="">Quên mật khẩu</a></p>
                     </div>
