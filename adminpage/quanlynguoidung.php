@@ -2,6 +2,9 @@
 
 include_once "./controller/nguoidung.php";
 ?>
+
+
+
 <div class="breadcrumbs">
     <div class="breadcrumbs-inner">
         <div class="row m-0">
@@ -25,6 +28,7 @@ include_once "./controller/nguoidung.php";
         </div>
     </div>
 </div>
+
 
 <div class="content">
     <div class="animated fadeIn">
@@ -54,7 +58,6 @@ include_once "./controller/nguoidung.php";
                                 while ($row = mysqli_fetch_array($query)){ 
                                 ?>
                                    <tr> 
-                                 
                                     <td> <?php echo $row['id_user']?></td>
                                     <td><?php echo $row['ten_user']?></td>
                                     <td> <?php echo $row['email']?></td>
