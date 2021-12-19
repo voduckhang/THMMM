@@ -62,7 +62,7 @@ include_once "./controller/danhmucsanpham.php";
                         
                                     <td><a href="quantri.php?page_layout=quanlydanhmucsanphamchitiet&id_dm_sp=<?php echo $row['id_dm_sp'];?>"><button type="button" class="btn btn-link">Xem</button></a></td>
                                     <td><a href="quantri.php?page_layout=quanlydanhmucsanphamedit&id_dm_sp=<?php echo $row['id_dm_sp'];?>"><button type="button" class="btn btn-secondary btn-sm">Sửa</button></a>
-                                    <a href="../controller/danhmuc-remove-controller.php?id_dm_sp=<?php echo $row['id_dm_sp'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button>
+                                    <a href="./controller/danhmuc-remove-controller.php?id_dm_sp=<?php echo $row['id_dm_sp'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button>
                                     </td>
                                     </tr>
                                     <?php
