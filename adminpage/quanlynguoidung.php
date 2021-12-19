@@ -66,7 +66,7 @@ include_once "./controller/nguoidung.php";
                 
                                     <td><a href="quantri.php?page_layout=quanlynguoidungchitiet&id_user=<?php echo $row['id_user'];?>"><button type="button" class="btn btn-link">Xem</button></a></td>
                                     <td><a href="quantri.php?page_layout=quanlynguoidungedit&id_user=<?php echo $row['id_user'];?>"><button type="button" class="btn btn-secondary btn-sm">Sửa</button></a>
-                                    <a href="../controller/nguoidungremovecontroller.php?id_user=<?php echo $row['id_user'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button></a>
+                                    <a href="./controller/nguoidungremovecontroller.php?id_user=<?php echo $row['id_user'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button></a>
                                     </td>
                                     </tr>
                                     <?php
