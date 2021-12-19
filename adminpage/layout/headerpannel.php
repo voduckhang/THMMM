@@ -155,7 +155,27 @@
 
                     <div class="user-area dropdown float-right">
                
-                
+                    <?php
+                 if(isset($_SESSION["user_name"])){
+                          echo '
+                        <a href="#" class="dropdown for-message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Xin chào, '.$_SESSION["user_name"].'
+                        </a>';
+                        echo ' <div class="user-menu dropdown-menu">
+                            
+                        <a class="nav-link" href="#"><i class="fa fa-user"></i>My Profile</a>
+
+                        <a class="nav-link" href="#"><i class="fa fa-bell-o"></i>Notifications <span class="count">13</span></a>
+
+                        <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
+                       <a class="nav-link" href="../controller/logoutcontroller.php"><i class="fa fa-power-off"></i>Logout</a>
+                      
+                    </div>';
+                    }
+                    else{
+                        echo'  <a href="page-login.php"><i class="menu-icon"></i>Đăng nhập </a>';
+                    }
+                    ?>
 
                        
                     </div>

@@ -40,7 +40,7 @@ include_once "./controller/nguoidung.php";
                         <strong class="card-title">Người dùng</strong>&nbsp;
                     </div>
                     <div class="card-body">
-                        <a href="quanlynguoidungadd.php"><button type="button" class="btn btn-primary btn-sm" style="float:right;">Thêm</button></a>
+                    <a href="quantri.php?page_layout=quanlynguoidungadd"><button type="button" class="btn btn-primary btn-sm" style="float:right;">Thêm</button></a>
                         <table id="bootstrap-data-table" class="table table-striped table-bordered">
                             <thead>
                                 <tr>
