@@ -1,4 +1,7 @@
+<?php
 
+include_once "./controller/danhmucsanpham.php";
+?>
 
     <div class="breadcrumbs">
         <div class="breadcrumbs-inner">
@@ -50,7 +53,21 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                              
+                                <?php
+                                while ($row = mysqli_fetch_array($query)){ 
+                                ?>
+                                   <tr> 
+                                    <td> <?php echo $row['id_dm_sp']?></td>
+                                    <td> <?php echo $row['ten_dm_sp']?></td>
+                        
+                                    <td><a href="quantri.php?page_layout=quanlydanhmucsanphamchitiet&id_dm_sp=<?php echo $row['id_dm_sp'];?>"><button type="button" class="btn btn-link">Xem</button></a></td>
+                                    <td><a href="quantri.php?page_layout=quanlydanhmucsanphamedit&id_dm_sp=<?php echo $row['id_dm_sp'];?>"><button type="button" class="btn btn-secondary btn-sm">Sửa</button></a>
+                                    <a href="../controller/danhmuc-remove-controller.php?id_dm_sp=<?php echo $row['id_dm_sp'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button>
+                                    </td>
+                                    </tr>
+                                    <?php
+                                    }
+                                    ?>
                                 </tbody>
 
                             </table>
