@@ -1,5 +1,8 @@
 
+<?php
 
+include_once './controller/danhmuc-add-controller.php';
+?>
 
     <div class="breadcrumbs">
         <div class="breadcrumbs-inner">

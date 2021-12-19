@@ -41,7 +41,7 @@ include_once "./controller/danhmucsanpham.php";
                             <strong class="card-title">Danh mục</strong>&nbsp;
                         </div>
                         <div class="card-body">
-                            <a href="quanlydanhmucadd.php"><button type="button" class="btn btn-primary btn-sm" style="float:right;">Thêm</button></a>
+                            <a href="quantri.php?page_layout=quanlydanhmucsanphamadd"><button type="button" class="btn btn-primary btn-sm" style="float:right;">Thêm</button></a>
                             <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                 <thead>
                                     <tr>
