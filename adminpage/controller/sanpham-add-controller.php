@@ -2,7 +2,7 @@
 <?php
 
 ob_start();
-include_once "../ketnoisql/ketnoi.php";
+include_once "./ketnoisql/ketnoi.php";
 $sqldm = "SELECT * FROM danhmucsp ";
 $query = mysqli_query($conn, $sqldm);
 $sqlcc = "SELECT * FROM nhacungcap ";

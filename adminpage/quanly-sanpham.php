@@ -69,7 +69,7 @@ $query = mysqli_query($conn, $sql);
                                     
                                     <td><a href="quantri.php?page_layout=quanlysanphamchitiet&id_sp=<?php echo $row['id_sp'];?>"><button type="button" class="btn btn-link">Xem</button></a></td>
                                     <td><a href="quantri.php?page_layout=quanlysanphamedit&id_sp=<?php echo $row['id_sp'];?>"><button type="button" class="btn btn-secondary btn-sm">Sửa</button></a>
-                                    <a href="../controller/sanpham-remove-controller.php?id_sp=<?php echo $row['id_sp'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button></a>
+                                    <a href="./controller/sanpham-remove-controller.php?id_sp=<?php echo $row['id_sp'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button></a>
                                     </td>
                                     </tr>
                                     <?php

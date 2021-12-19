@@ -1,6 +1,6 @@
 
 <?php
-include_once '../controller/sanpham-add-controller.php';
+include_once './controller/sanpham-add-controller.php';
 
 ?>
         <div class="breadcrumbs">
