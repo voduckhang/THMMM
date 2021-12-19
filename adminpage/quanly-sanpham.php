@@ -1,3 +1,4 @@
+
 <?php
 
 $sql = "SELECT * FROM sanpham INNER JOIN danhmucsp ON sanpham.id_danhmuc=danhmucsp.id_dm_sp 
@@ -65,6 +66,7 @@ $query = mysqli_query($conn, $sql);
                             
                         
                                     <td style="text-align:center;"><img width="100px" src="pictures/<?php echo $row['anh_sp']?>"></td>
+                                    
                                     <td><a href="quantri.php?page_layout=quanlysanphamchitiet&id_sp=<?php echo $row['id_sp'];?>"><button type="button" class="btn btn-link">Xem</button></a></td>
                                     <td><a href="quantri.php?page_layout=quanlysanphamedit&id_sp=<?php echo $row['id_sp'];?>"><button type="button" class="btn btn-secondary btn-sm">Sửa</button></a>
                                     <a href="../controller/sanpham-remove-controller.php?id_sp=<?php echo $row['id_sp'];?>"> <button type="button" class="btn btn-warning btn-sm" onclick="remove(this)">Xoá</button></a>
