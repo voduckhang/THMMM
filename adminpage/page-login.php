@@ -6,6 +6,10 @@
 <html class="no-js" lang="">
 <!--<![endif]-->
 
+
+
+
+
 <head>
     <?php include "layout/headerpage.php";?>
 
